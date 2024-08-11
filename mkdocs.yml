@@ -1,0 +1,7 @@
+site_name: kelvar's test
+theme:
+  name: material
+nav:
+  - 主页: index.md
+  - 学习笔记: notebook/test.md
+  - 杂谈: tattle/test.md
