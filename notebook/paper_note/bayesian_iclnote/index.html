@@ -1,0 +1,1092 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../../tattle/test/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>bayesian-model-of-dynamic-image-stabilization-in-the-visual-system - kelvar's test</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bayesian-model-of-dynamic-image-stabilization-in-the-visual-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="kelvar&#39;s test" class="md-header__button md-logo" aria-label="kelvar's test" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            kelvar's test
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              bayesian-model-of-dynamic-image-stabilization-in-the-visual-system
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="kelvar&#39;s test" class="md-nav__button md-logo" aria-label="kelvar's test" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    kelvar's test
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    学习笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            学习笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    论文阅读
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            论文阅读
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    bayesian-model-of-dynamic-image-stabilization-in-the-visual-system
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    bayesian-model-of-dynamic-image-stabilization-in-the-visual-system
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    <span class="md-ellipsis">
+      author
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipline" class="md-nav__link">
+    <span class="md-ellipsis">
+      pipline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preceding-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      preceding work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">
+      model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      task visualization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-theory-factorized-bayesian-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      math theory -- factorized bayesian decoder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="math theory -- factorized bayesian decoder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      gradient
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      network implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trend" class="md-nav__link">
+    <span class="md-ellipsis">
+      trend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulate-human" class="md-nav__link">
+    <span class="md-ellipsis">
+      simulate human
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-more-realistic-scene" class="md-nav__link">
+    <span class="md-ellipsis">
+      in more realistic scene
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discrimination-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      discrimination task
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternative approaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implement-in-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      implement in brain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    杂谈
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            杂谈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tattle/test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    <span class="md-ellipsis">
+      author
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipline" class="md-nav__link">
+    <span class="md-ellipsis">
+      pipline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preceding-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      preceding work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">
+      model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      task visualization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-theory-factorized-bayesian-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      math theory -- factorized bayesian decoder
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="math theory -- factorized bayesian decoder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient" class="md-nav__link">
+    <span class="md-ellipsis">
+      gradient
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      network implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trend" class="md-nav__link">
+    <span class="md-ellipsis">
+      trend
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulate-human" class="md-nav__link">
+    <span class="md-ellipsis">
+      simulate human
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-more-realistic-scene" class="md-nav__link">
+    <span class="md-ellipsis">
+      in more realistic scene
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discrimination-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      discrimination task
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-approaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternative approaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implement-in-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      implement in brain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#location" class="md-nav__link">
+    <span class="md-ellipsis">
+      Location
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="bayesian-model-of-dynamic-image-stabilization-in-the-visual-system">Bayesian model of dynamic image stabilization in the visual system</h1>
+<p><a src="https://www.pnas.org/doi/10.1073/pnas.1006076107">PNAS: Bayesian model of dynamic image stabilization in the visual system</a></p>
+<h2 id="author">author</h2>
+<p>Yoram Burak
+Uri Rokni
+Markus Meister
+Haim Somplolinsky</p>
+<h2 id="purpose">purpose</h2>
+<p>To draw a model to explain why human visual system can stablize dynamic image. </p>
+<h2 id="pipline">pipline</h2>
+<p><strong>stage 1</strong>
+As the paper proved, when  performing high acuity visual tasks, the brain must consider the drift of image.</p>
+<p><strong>stage 2</strong>
+draw a decode strategy to interprete the spikes emitted by the retina(视网膜)
+difficulty: possible stimuli has an exponentially large number</p>
+<p><strong>stage 3</strong>
+Another implementation involves two populations of cells, one tracks position, another represents a stabilized estimate  of the image itself.</p>
+<p>the spikes from the retina are dynamically routed to the two populations and are interpreted in a probablistic mannner.</p>
+<p>The paper also considers the architecture of neural circuitry, measures the performance of human fixational eye motion (under measured statistics)</p>
+<p><strong>prediction</strong>
+In high auity tasks, fixed features within the visual scene are beneficial because they provide information about the drifting position of the image.</p>
+<h2 id="preceding-work">preceding work</h2>
+<p>brain infers surroundings (Hypotheses)</p>
+<p>when noisy, the interpretation becomes ambiguous, and those hypotheses compete.</p>
+<p><strong>How could the brain estimate the image from 2D scenes</strong></p>
+<p>sources of ambiguity:
+1. noise in neural circuitry
+2. random movements of the eye that leads to image jitter on the retina</p>
+<p>An ideal Bayesian decoder in the brain take those into consider. But the number of variables we must consider is too large.</p>
+<p>Prior work on Bayesian inference focused on simplified conditions in which the subject estimates only a single typicallly static sensory variable.</p>
+<h2 id="model">model</h2>
+<p><strong>simulated cells(retina)</strong>
+The researchers model the fovea as a homogeneous array of the retinal ganglion cells of a single type, arranged on a rectangular grid.</p>
+<p><strong>input image</strong>
+The image consist of black-and-white pixels on the same grid, whose itensities are drawn independently from a binary distribution.</p>
+<p><strong>fire process(output)</strong>
+The firing of each cell is an inhomogeneous Poisson process(非齐次泊松过程), whose rate depends on the image pixel in the receptive field</p>
+<p><strong>a simple version</strong>
+pixel on &rarr; cell fire rate = <span class="arithmatex">\(\lambda 1\)</span> 
+pixel off &rarr; cell fire rate = <span class="arithmatex">\(\lambda 0\)</span> </p>
+<p><strong>a realistic version later</strong>
+the fire rate dependas on the past light intensity within the retina's integration time.</p>
+<p><strong>about fixational movements</strong>
+the fixational movements of the image over the retina are modeled as a discrete random walk</p>
+<h2 id="task-visualization">task visualization</h2>
+<p>Use 'E' as an input， apply fixational movements on the image. The fig C refers to the spikes generated by their model retina.
+In which <span class="arithmatex">\(\lambda_0 =10Hz\)</span>,<span class="arithmatex">\(\lambda_1 = 100Hz\)</span>
+[figure]</p>
+<p>Indeed, images of a Snellen letter derived from simple spike accumulation in each
+pixel seem almost random. And so without some knowledge of the image trajectory, such a reconstruction is impossible.</p>
+<h2 id="math-theory-factorized-bayesian-decoder">math theory -- factorized bayesian decoder</h2>
+<h3 id="definition">definition</h3>
+<p><span class="arithmatex">\(s\)</span>: a probabilistic estimate of the image
+<span class="arithmatex">\(x\)</span>: retinal position
+<span class="arithmatex">\(p(x,t)\)</span>: probability distribution of positions
+<span class="arithmatex">\(p_i (s_i, t)\)</span>: probability distributions for individual pixels in the stabilized coordinates of the image
+<span class="arithmatex">\(s_i\)</span>: a pixel is on or off (1/0)
+<span class="arithmatex">\(m_i (t) = p_i (1,t) = 1- p_i (0,t)\)</span>
+<span class="arithmatex">\(D\)</span> : D ≃ 100 arcmin2/s, diffusion coefficient(a human feature, )</p>
+<p>The full Bayesian estimate is like:</p>
+<div class="arithmatex">\[p(s,x,t) = p(x,t) \prod \limits_i p_i (s_i,t)\]</div>
+<p>This form ignores any correlations between the values of different pixels or between the image and its position.</p>
+<p>Meaning that each pixel is considered desparately. And the relation between the position and the content of the picture. </p>
+<h3 id="gradient">gradient</h3>
+<p>分段函数
+<strong>between spike</strong></p>
+<div class="arithmatex">\[\frac{\partial p(x,t)}{\partial t} = D \nabla^2 p(x,t) \]</div>
+<div class="arithmatex">\[\nabla^2 p(x,t) = p(\overline{x}, t) - p(x,t) = \sum_{x' \in NN(x)}{p(x',t)} - 4p(x,t)\]</div>
+<p><span class="arithmatex">\(D\)</span>是系数</p>
+<p>又</p>
+<div class="arithmatex">\[\frac{\partial m_i (t)}{\partial t} = -\Delta \lambda[1-m_i (t)]m_i (t)\]</div>
+<div class="arithmatex">\[\Delta \lambda = \lambda_1 - \lambda_0\]</div>
+<ol>
+<li><span class="arithmatex">\(m_i (t)\)</span> decays toward zero in the absence of spikes, with a rate proportional to <span class="arithmatex">\(\Delta \lambda\)</span></li>
+<li>if <span class="arithmatex">\(m_i\)</span> is either 0 or 1, such that the decoder is certain about the value of  pixel <span class="arithmatex">\(i, m_i\)</span> remains unchanged</li>
+</ol>
+<p><strong>due to spike</strong>
+At time t, the ganglion cell k fires a spike.</p>
+<div class="arithmatex">\[p(x,t_+) \propto [\lambda_0 + \Delta \lambda m_{k-x} (t_-)] \cdot p(x,t_-)\]</div>
+<div class="arithmatex">\[m_i (t_+) = m_i (t_-) + \Phi [m_i (t_-)]\cdot p (k-i,t_+)\]</div>
+<div class="arithmatex">\[\Phi(m) = \frac{\Delta \lambda m(1-m)}{\lambda_0 + \Delta \lambda m }\]</div>
+<p>&rarr; The change in <span class="arithmatex">\(m_i\)</span> is proportional to the estimated probability that the image is at position <span class="arithmatex">\(k-i\)</span>.</p>
+<h2 id="network-implementation">network implementation</h2>
+<p>RGC: retina ganglion cell
+This result suggests a network architecture with two divergent projections from retinal ganglion cells to the what cells and the where cells, along with reciprocal recurrent connections between both of these populations.
+[figure 1-D]</p>
+<h2 id="performance">performance</h2>
+<p>Comparison between the model and static decoder.</p>
+<p>The response of factorized decoder to a sample stimulus is illustrated in 
+[Figure 2-A]</p>
+<p>The estimate of the image itself, represented by activity in the what population, gradually improves with time. In this example almost all of the pixels are estimated correctly at 300 ms</p>
+<p>[Figure 2-B]</p>
+<p>When tested with many random images, the factorized decoder routinely reconstructed 90% of the pixels correctly in just 100 ms (Fig. 2B). By comparison, a static decoder that ignores eye movements and simply accumulates spikes performed very poorly: Shortly after stimulus onset it reached a maximum of nearly 60% correctly estimated pixels, but then the blurring from retinal motion took its toll.</p>
+<h3 id="trend">trend</h3>
+<p><strong>Performance improves with slower eye movements, higher firing rates,
+and larger image size</strong></p>
+<p>When D is small, the decoder easily tracks the position of the image, and performance is limited only by the
+stochasticity of the ganglion cell response. As D increases, the performance degrades due to uncertainty about the position (Fig.
+3A). The convergence time increases sharply above a critical value of D. This value is proportional to the RGC ﬁring rates, as can be
+deduced from dimensional analysis. With a larger image, more information is available about the trajectory, and the decoder’s
+performance improves markedly (Fig. 3B). Further analysis shows that increasing the number of pixels by a factor f acts roughly like a
+reduction of D by a factor <span class="arithmatex">\(\sqrt{f}\)</span>. This sensitivity to image size should be observable in psychophysical experiments.</p>
+<p>[figure 3-A]</p>
+<p>[figure 3-B]</p>
+<h3 id="simulate-human">simulate human</h3>
+<p>With D set to 100 <span class="arithmatex">\(arcmin^2 /s\)</span>, corresponding to the measured statistics of human
+ﬁxational drift (11–13), the factorized decoder performs well on images that cover at least 40 × 40 pixels (20 × 20 arcmin) (Fig. 3B). Reconstruction improves dramatically if one is satisﬁed with a lower resolution. For example, if the pixel size is increased from 0.5 to 1 arcmin, then the eye drift changes the pixel contents less rapidly, and four ganglion cells are available to report each pixel.
+Under these conditions, small 5 × 5 arcmin images can be decoded rapidly to high accuracy (Fig. 3B).</p>
+<h3 id="in-more-realistic-scene">in more realistic scene</h3>
+<p>smaller picture could be better reconstructed</p>
+<p>but the advantage of the model will be more salient when it comes to more pixels</p>
+<h3 id="discrimination-task">discrimination task</h3>
+<p>The possible images represents the letters A-Z. Spikes are generated by a model retina with a <em>biphasic temporal filter</em> and diffusion coeffient D = 100 <span class="arithmatex">\(arcmin^2 /s\)</span>and fed into decoder.</p>
+<p>biphasic temporal filter: to minus the affect of noise</p>
+<p>The decoder achieves a 90% success rate after ~300ms(about the length of a human fixation), compatible with human vision on this task.</p>
+<p>static: ~50%</p>
+<h2 id="discussion">Discussion</h2>
+<h3 id="alternative-approaches">alternative approaches</h3>
+<p>By stabilizing the retinal image, as proposed here, fixational image motion is dealt with once and for all by dedicated neural circuitry that performs the same computation regardless of the image content.</p>
+<p>This division of labor is functionally attractive, but one can imagine an alternative scenario in which the visual system deals with fixational motion separately whenever it analyzes the foveal image for a specific visual task.</p>
+<p>The strategy, piecewise static decoder:
+1. in each short time window, generate a positioninvariant likelihood that each of the possible letters is in the image, using the static decoder
+2. summate these log-likelihoods across windows to accumulate evidence over time, while ignoring the continuity of the trajectory across adjoining windows.</p>
+<p>can work well in the letter discrimination task</p>
+<p>drawbacks:
+1. seems complicated, because intricate neural circuitry must be set up for each possible pattern and every kind of visual task.
+2. two eyes will produce relative jitter
+3. not consistent with RGC:
+     - When the temporal response properties of RGCs are taken into account, eye motion has two competing effects within our model. On one hand, it introduces ambiguity in the interpretation of retinal spikes. On the other hand, it helps drive the RGCs, whose response to completely static stimuli is weak. 
+     - Previous analysis of ideal discrimination between two small stimuli at the limit of visual acuity suggested that a small drift would be beneficial, but the actual eye movements of human subjects are much larger and on balance deleterious </p>
+<p>Indeed, it seems that certain types of retinal ganglion cells appear designed to ignore global image motion entirely and respond only when an object moves relative to the background scene.</p>
+<p>A broader question is hwo the brain forms a stable scene representation across saccades(big movements), in which the computational principles presented here may not be useful in brain. In fact, the brain might use a different neural circuity to process those conditions.</p>
+<h3 id="implement-in-brain">implement in brain</h3>
+<p>The factorized decoder mentioned above is based on a a hypothesis that the image pixels are the fundamental units.</p>
+<p>But if the computation is performed in the visual cortex(视神经皮层), the decoder may represent propabilities for presence of more complex features.</p>
+<p>The implementation of the factorized decoding strategy has several salient features.
+1. divergent afferents, <em>where</em> &lt;&lt; <em>what</em>
+2. signal from retina to <em>where&amp;what</em> requires a multiplicative gating controlled in a reciprocal(相互的，交互的) fashion by the signals in those populations.
+3. In the <em>where</em> popilstion, local excitatory connections are required to implement the diffusive update between spikes, and a global divisiv mechanism.
+4. involve local nonlinerities（局部非线性性）.</p>
+<h3 id="location">Location</h3>
+<p>So where should these circuit be in human visual system?</p>
+<p>fixational drift(movement) is indepent for two eyes
+&rarr; the circuit should be within the monocular part of the visual pathway(视觉通路的单眼部分)</p>
+<p>If they are fixed on retina
+&rarr; not accurate enough to perform such task</p>
+<p>Maybe at foveal region of V1(V1区中央凹区域).</p>
+<p><strong>How to combine the images from two eyes</strong>
+hypothesis: two monocular populations of <em>where</em> neurons that control the inputs to a single population of <em>what</em> neurons</p>
+<p>Such a binocular representation of the stabilized image may appear in disparity-selective neurons in V1 or downstream of V1, for example in a binocular
+population in V2 that receives monocular inputs</p>
+<p>further experiment:
+record from cortical neurons that represent the primate fovea,whose receptivefield structure is fine enough to resolve patterns close to the animal’s acuity.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
