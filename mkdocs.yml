@@ -3,5 +3,23 @@ theme:
   name: material
 nav:
   - 主页: index.md
-  - 学习笔记: notebook/test.md
-  - 杂谈: tattle/test.md
+  - 学习笔记: 
+    - intro: notebook/test.md
+  - 论文阅读: 
+    - intro: notebook/paper_note/index.md
+    - bayesian-model-of-dynamic-image-stabilization-in-the-visual-system: notebook/paper_note/bayesian_iclnote.md
+  - 杂谈: 
+    - intro: tattle/test.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
