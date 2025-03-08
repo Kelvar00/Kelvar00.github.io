@@ -1,8 +1,9 @@
-site_name: kelvar's test
+site_name: kelvar's homepage
 theme:
   name: material
 nav:
   - 主页: index.md
+  - about: about/about.md
   - 学习笔记: 
     - intro: notebook/test.md
   - 论文阅读: 
