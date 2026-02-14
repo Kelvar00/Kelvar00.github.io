@@ -1,0 +1,27 @@
+cv:
+  name: SAMPLE NAME
+  label: SAMPLE TITLE
+  email: sample@example.com
+  location: SAMPLE LOCATION
+  summary: 这里填写你的简历摘要（示例）。
+
+  # 如暂不使用 CV 页面，可保持最小结构。
+  sections: {}
+
+# 示例：
+# cv:
+#   name: Jiale Wu 吴佳乐
+#   label: Undergrad student
+#   sections:
+#     Education:
+#       - institution: Zhejiang University
+#         area: Artificial Intelligence
+#         start_date: 2022
+#     Volunteer Experience:
+#       - institution: WeLight Lab, HKU
+#         area: Research Assistant
+#         start_date: 2023
+#     Certificates:
+#       - institution: Coursera
+#         area: Deep Learning Specialization
+#         start_date: 2024

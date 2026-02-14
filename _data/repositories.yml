@@ -1,0 +1,9 @@
+github_users: []
+repo_description_lines_max: 2
+github_repos: []
+
+# 示例：
+# github_users:
+#   - your-github-id
+# github_repos:
+#   - your-id/your-repo

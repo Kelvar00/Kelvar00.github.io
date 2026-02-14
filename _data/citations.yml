@@ -1,0 +1,12 @@
+metadata:
+  last_updated: '2026-02-14'
+
+# 如不使用自动引用统计，可保持空字典。
+papers: {}
+
+# 示例：
+# papers:
+#   your_scholar_id:paper_id:
+#     citations: 12
+#     title: Your Paper Title
+#     year: '2026'

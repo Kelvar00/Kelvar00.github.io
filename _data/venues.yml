@@ -1,0 +1,7 @@
+# 期刊/会议简称映射（可为空）。
+{}
+
+# 示例：
+# "CVPR":
+#   url: https://cvpr.thecvf.com/
+#   color: "#1565c0"

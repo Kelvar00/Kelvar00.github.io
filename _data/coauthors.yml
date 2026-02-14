@@ -1,0 +1,7 @@
+# 不使用合作者链接时可保持为空。
+{}
+
+# 示例（取消注释后使用）：
+# "zhang":
+#   - firstname: ["Shengyuan", "S."]
+#     url: https://example.com
