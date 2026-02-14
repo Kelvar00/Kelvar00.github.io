@@ -282,6 +282,11 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
     - [All Contributors](#all-contributors)
   - [Star History](#star-history)
   - [License](#license)
+  - [使用说明（中文，个人极简版）](#使用说明中文个人极简版)
+    - [1) 你最常改的文件](#1-你最常改的文件)
+    - [2) announcements 和 latest_posts 的内容放哪里](#2-announcements-和-latest_posts-的内容放哪里)
+    - [3) 头像大小和位置怎么调](#3-头像大小和位置怎么调)
+    - [4) 数据目录现在的策略](#4-数据目录现在的策略)
 
 <!--te-->
 
