@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Kelvar00.github.io/sitemap.xml
