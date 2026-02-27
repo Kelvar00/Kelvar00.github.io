@@ -6,7 +6,7 @@ subtitle: Undergrad student, State Key Lab of CAD&CG, Zhejiang University
 
 profile:
   align: right
-  image: head.png
+  image: laoshan.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
@@ -42,3 +42,5 @@ I will continue to pursue a Master's degree at the State Key Lab of CAD&CG, Zhej
   - Authors: An Zhao, Shengyuan Zhang, Zejian Li, Ling Yang, Pei Chen, **Jiale Wu**, Haoran Xu, AnYang Wei, Perry Pengyun Gu, Lingyun Sun
 - **T3Set: A Multimodal Dataset with Targeted Suggestions for LLM-based Virtual Coach in Table Tennis Training** (KDD 2025 Datasets and Benchmarks Track)
   - Authors: Ji Ma, **Jiale Wu**, Haoyu Wang, Yanze Zhang, Xiao Xie, Zheng Zhou, Hui Zhang, Jiachen Wang, Yingcai Wu
+- **PhyGaP: Physically-Grounded Gaussians with Polarization Cues** (CVPR 2026)
+  - Authors: **Jiale Wu**, Xiaoyang Bai, Zongqi He, Weiwei Xu, YIFAN PENG
